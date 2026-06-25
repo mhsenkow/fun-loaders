@@ -4,6 +4,8 @@ A library of complex, canvas-based React loading animations.
 
 Inspired by fractals, reaction-diffusion, strange attractors, space-filling curves, and more.
 
+**[Live demo →](https://mhsenkow.github.io/fun-loaders/)**
+
 ## Loaders
 
 | Loader | Description |
@@ -73,3 +75,14 @@ All loaders accept:
 - `params` — partial override of preset/default parameters
 
 Each loader loops on `cycleDuration` (ms). Reaction-diffusion runs continuously — `cycleDuration` only drives a subtle visual breathe; growth sparks keep the pattern alive forever.
+
+## Development
+
+```bash
+npm install
+npm run dev          # local gallery
+npm run build        # library bundle → dist/
+npm run build:demo   # static demo site → demo-dist/
+```
+
+The demo deploys to GitHub Pages on every push to `main`.
